@@ -85,7 +85,7 @@ export default function KSMAGallery() {
             className="inline-flex items-center gap-6 btn-primary border-none py-5 px-10 rounded-2xl w-full sm:w-auto hover:bg-brand-blue hover:text-white hover:shadow-premium"
           >
             <img 
-              src="/insta-logo.avif" 
+              src="/KSMA_ADMISSION/insta-logo.avif" 
               alt="Instagram Logo" 
               className="w-12 h-12 md:w-16 md:h-16 rounded-full shadow-md bg-white p-1 border-2 border-brand-frame"
               onError={(e) => {

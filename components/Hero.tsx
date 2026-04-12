@@ -103,7 +103,7 @@ export default function Hero() {
         <div className="relative h-full flex flex-col justify-center">
           <div className="bg-white rounded-3xl p-4 shadow-frame border-4 border-white mx-auto w-full max-w-md relative z-10 transform lg:translate-x-8">
             <div className="w-full aspect-[4/5] bg-brand-light rounded-2xl flex items-center justify-center mb-0 overflow-hidden relative border-2 border-brand-frame">
-              <img src="/hero-students.png" alt="Medical Students at KSMA" className="w-full h-full object-cover" onError={(e) => {
+              <img src="/KSMA_ADMISSION/hero-students.png" alt="Medical Students at KSMA" className="w-full h-full object-cover" onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 e.currentTarget.parentElement?.classList.add('bg-brand-light');
               }} />
