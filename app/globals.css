@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-light text-slate-800 font-jakarta antialiased;
+  }
+}
+
+@layer components {
+  /* Boxed and framed cards for the new light blue frame aesthetic */
+  .glass-card {
+    @apply bg-white border-2 border-brand-frame rounded-xl p-8 shadow-soft transition-all duration-300;
+  }
+  
+  /* Primary CTA Buttons */
+  .btn-primary {
+    @apply bg-brand-blue text-white font-inter font-bold py-4 px-8 rounded-xl shadow-md border-2 border-transparent hover:bg-white hover:text-brand-blue hover:border-brand-blue hover:shadow-frame hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2;
+  }
+  
+  .sticky-cta {
+    @apply fixed bottom-6 right-6 bg-brand-blue text-white p-4 rounded-full shadow-premium z-50 hover:scale-110 hover:shadow-frame transition-all border-2 border-brand-frame;
+  }
+  
+  /* Feature framed containers */
+  .glassmorphism {
+    @apply bg-slate-50/90 backdrop-blur-md border-2 border-brand-frame shadow-soft rounded-2xl;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-accent rounded-full hover:bg-brand-blue border-2 border-slate-100;
+  }
+}
