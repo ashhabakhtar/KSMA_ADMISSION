@@ -8,7 +8,7 @@ const whatsappNumber = '917267848657'
       href={`https://wa.me/${whatsappNumber}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="sticky-cta flex items-center gap-2 shadow-2xl hover:shadow-oxygen-blue/50 transition-all duration-300 z-50"
+      className="hidden md:flex sticky-cta items-center gap-2 shadow-2xl hover:shadow-oxygen-blue/50 transition-all duration-300 z-50"
       aria-label="Chat on WhatsApp"
     >
       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

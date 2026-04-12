@@ -4,7 +4,7 @@ export default function CallCTA() {
   return (
     <a
       href="tel:+918810894778"
-      className="fixed bottom-6 left-6 md:left-6 bg-gradient-to-r from-green-500 to-emerald-500 text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110 transition-all duration-300 hover:shadow-green-500/50"
+      className="hidden md:flex fixed bottom-6 left-6 md:left-6 bg-gradient-to-r from-green-500 to-emerald-500 text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110 transition-all duration-300 hover:shadow-green-500/50"
       aria-label="Call KSMA Admission"
     >
       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

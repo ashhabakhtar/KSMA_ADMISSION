@@ -5,6 +5,7 @@ import SmoothScroll from '@/components/SmoothScroll'
 import WhatsAppCTA from '@/components/WhatsAppCTA'
 import CallCTA from '@/components/CallCTA'
 import InstagramCTA from '@/components/InstagramCTA'
+import MobileAppMenu from '@/components/MobileAppMenu'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', weight: ['400', '500', '600', '700'] })
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-jakarta', weight: ['400', '500', '600', '700'] })
@@ -32,6 +33,7 @@ export default function RootLayout({
         <SmoothScroll>
           {children}
         </SmoothScroll>
+        <MobileAppMenu />
         <WhatsAppCTA />
         <CallCTA />
         <InstagramCTA />
