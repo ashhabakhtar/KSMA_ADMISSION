@@ -1,25 +1,85 @@
 export default function BishkekView() {
+  const galleryImages = [
+    '/bishkek_doctour_view.jpg',
+    'https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1627918844474-12169b4eaf40?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1529124016578-831e5058721c?auto=format&fit=crop&w=800&q=80'
+  ]
+
   return (
-    <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden flex items-center justify-center border-y-4 border-brand-frame">
-      <div className="absolute inset-0">
-        <img 
-          src="/bishkek_doctour_view.jpg" 
-          alt="Beautiful Bishkek City with Majestic Mountains" 
-          className="w-full h-full object-cover transition-transform duration-[10000ms] hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
-      </div>
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-        <div className="inline-block px-6 py-2 bg-brand-blue/90 rounded-full mb-6 border border-white/20 backdrop-blur-sm">
-          <span className="text-white font-bold tracking-widest uppercase text-sm">Location</span>
+    <section className="bg-brand-light py-24 px-4 border-y border-brand-frame/50 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+        
+        {/* Left Side: Text and CTA */}
+        <div className="w-full lg:w-1/2 flex flex-col space-y-6">
+          <div className="inline-block px-4 py-1.5 bg-brand-blue/10 rounded-full border border-brand-blue/20 w-fit">
+            <span className="text-brand-blue font-bold tracking-widest uppercase text-xs">Destination</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-inter font-extrabold text-slate-900 leading-tight">
+            EXPLORE MORE ABOUT <br className="hidden sm:block" />
+            <span className="text-brand-accent">KYRGYZSTAN</span>
+          </h2>
+          
+          {/* Pickup Line */}
+          <div className="pl-6 border-l-4 border-brand-accent my-4 bg-white/50 py-4 pr-4 rounded-r-xl shadow-sm">
+            <p className="text-xl md:text-2xl lg:text-3xl font-bold text-slate-800 italic">
+              “Study MBBS.<br />
+              <span className="text-brand-blue">Live the Beauty of Kyrgyzstan.</span>”
+            </p>
+          </div>
+          
+          <p className="text-lg text-slate-700 font-medium leading-relaxed max-w-xl">
+            A vibrant culture, safe modern cities like Bishkek, and breathtaking landscapes surrounded by the majestic Tian Shan mountains. Your ideal home to pursue an exceptional medical education while exploring the heart of Central Asia.
+          </p>
+          
+          <div className="pt-4">
+            <a 
+              href="https://www.shutterstock.com/search/kyrgyzstan-architecture-and-landscapes?image_type=photo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 btn-primary px-8 py-4 rounded-xl shadow-premium hover:-translate-y-1 transition-transform border-none font-bold text-lg"
+            >
+              <span>View More Gallery</span>
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <h2 className="text-4xl md:text-6xl lg:text-7xl font-inter font-extrabold text-white mb-6 drop-shadow-xl">
-          Welcome to <span className="text-brand-accent">Bishkek</span>
-        </h2>
-        <p className="text-lg md:text-2xl text-slate-200 font-medium drop-shadow-lg leading-relaxed max-w-3xl mx-auto">
-          A vibrant, modern capital surrounded by the majestic Tian Shan mountains. 
-          Experience a beautiful and safe environment for your medical journey.
-        </p>
+
+        {/* Right Side: Half View Gallery Template */}
+        <div className="w-full lg:w-1/2 relative">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-brand-blue/5 rounded-full blur-3xl -z-10"></div>
+          
+          <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-col gap-4 md:pt-12">
+              <img 
+                src={galleryImages[1]} 
+                alt="Kyrgyzstan Nature" 
+                className="w-full h-56 md:h-64 object-cover rounded-2xl shadow-soft border-[3px] border-white hover:scale-[1.02] transition-transform duration-300" 
+              />
+              <img 
+                src={galleryImages[2]} 
+                alt="Kyrgyzstan Lake" 
+                className="w-full h-72 md:h-80 object-cover rounded-2xl shadow-soft border-[3px] border-white hover:scale-[1.02] transition-transform duration-300" 
+              />
+            </div>
+            <div className="flex flex-col gap-4">
+              <img 
+                src={galleryImages[0]} 
+                alt="Bishkek City" 
+                className="w-full h-72 md:h-80 object-cover rounded-2xl shadow-soft border-[3px] border-white hover:scale-[1.02] transition-transform duration-300" 
+              />
+              <img 
+                src={galleryImages[3]} 
+                alt="Kyrgyzstan Mountains" 
+                className="w-full h-56 md:h-64 object-cover rounded-2xl shadow-soft border-[3px] border-white hover:scale-[1.02] transition-transform duration-300" 
+              />
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   )
