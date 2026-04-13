@@ -43,4 +43,14 @@
   ::-webkit-scrollbar-thumb {
     @apply bg-brand-accent rounded-full hover:bg-brand-blue border-2 border-slate-100;
   }
+
+  /* Force transparency on primary opaque colors to allow global background image through */
+  .bg-white {
+    --tw-bg-opacity: 0.85 !important;
+    backdrop-filter: blur(12px) !important;
+  }
+  .bg-brand-light {
+    --tw-bg-opacity: 0.70 !important;
+    backdrop-filter: blur(16px) !important;
+  }
 }
