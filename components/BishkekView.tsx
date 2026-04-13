@@ -3,7 +3,7 @@ export default function BishkekView() {
     <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden flex items-center justify-center border-y-4 border-brand-frame">
       <div className="absolute inset-0">
         <img 
-          src="/bishkek_mountain_view.png" 
+          src="/bishkek_doctour_view.jpg" 
           alt="Beautiful Bishkek City with Majestic Mountains" 
           className="w-full h-full object-cover transition-transform duration-[10000ms] hover:scale-110"
         />
