@@ -1,9 +1,9 @@
 export default function BishkekView() {
   const galleryImages = [
-    '/bishkek_doctour_view.jpg',
-    'https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1627918844474-12169b4eaf40?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1529124016578-831e5058721c?auto=format&fit=crop&w=800&q=80'
+    'https://image.shutterstock.com/image-photo/burana-tower-kyrgyzstan-near-town-tokmok-260nw-2531947737.jpg',
+    'https://image.shutterstock.com/image-photo/kyrgyzstan-bishkek-july-11-2025-riverside-260nw-2665799543.jpg',
+    'https://image.shutterstock.com/image-photo/historical-building-golden-dome-flag-kyrgyz-260nw-2583744991.jpg',
+    'https://image.shutterstock.com/image-photo/nooruz-celebration-crowd-people-on-ala-260nw-2591892801.jpg'
   ]
 
   return (
