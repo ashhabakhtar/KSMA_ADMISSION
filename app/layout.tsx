@@ -30,6 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${jakarta.variable} font-jakarta antialiased`}>
+        <div className="fixed inset-0 -z-50 bg-slate-900/5 overflow-hidden">
+          <img src="/BACK.png" alt="KSMA Background" className="w-full h-full object-cover blur-[12px] scale-110 opacity-40 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-brand-light/70 backdrop-blur-[2px]"></div>
+        </div>
         <SmoothScroll>
           {children}
         </SmoothScroll>

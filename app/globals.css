@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-brand-light text-slate-800 font-jakarta antialiased;
+    @apply bg-transparent text-slate-800 font-jakarta antialiased;
   }
 }
 

@@ -23,7 +23,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section ref={heroRef} className="min-h-screen flex items-center justify-center pt-8 pb-32 md:pt-24 md:pb-12 px-4 relative overflow-hidden bg-brand-light">
+    <section ref={heroRef} className="min-h-screen flex items-center justify-center pt-8 pb-32 md:pt-24 md:pb-12 px-4 relative overflow-hidden bg-transparent">
       {/* Background abstract shape in light blues */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-100 -skew-x-12 transform origin-top-right z-0 hidden lg:block opacity-70"></div>
 
