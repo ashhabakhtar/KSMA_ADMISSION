@@ -10,6 +10,7 @@ import AlumniReviews from '@/components/AlumniReviews'
 import TrustSignals from '@/components/TrustSignals'
 import CTA from '@/components/CTA'
 import KSMAHistory from '@/components/KSMAHistory'
+import BishkekView from '@/components/BishkekView'
 
 import KSMAGallery from '@/components/KSMAGallery'
 
@@ -33,6 +34,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <Features />
+      <BishkekView />
       <KSMAGallery />
       <AlumniReviews />
       <KSMAHistory />
